@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  color: #212121;
+    font-family: PTSansRegular, sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  background-color: #EEEEEE;
+  overflow: hidden;
+}
+
+title {
+  display: none;
+}
+
+body, main, div, form, input, textarea, label, ul, li, header, nav, a, h1, h2, h3, button, section {
+  display: flex;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+.App, #root{
+    width: 100%;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.page-title{
+    font-family: PTSansBold, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate{
+    align-self: center;
+    border-radius: 4px;
+    border: 0;
+    background: #1E88E5;
+    color: #fafafa;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    font-family: PTSansBold, sans-serif;
+    transition: 0.2s all;
+    outline: none;
+}
+
+.generate:hover{
+    background-color: #1565C0;
+}
+
+.generated-list{
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin-top: 40px;
+
+}
+
+.generated-list li{
+    justify-content: center;
+    font-size: 18px;
+    font-family: PTSansRegular, sans-serif;
+    color: #424242;
+    line-height: 25px;
+}
+
+.generated-list li strong{
+    display: inline;
+    margin-left: 5px;
+}
+
+
+@font-face {
+    font-family: PTSansRegular;
+    src: url("./fonts/PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+    font-family: PTSansBold;
+    src: url("./fonts/PT_Sans-Web-Bold.ttf");
+}
