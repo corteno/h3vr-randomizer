@@ -102,7 +102,7 @@ class App extends Component {
             let category = item.split('-')[0];
             let weapon = item.split('-')[1];
             return (
-                <li>{category} - <strong>{weapon}</strong></li>
+                <li><p>{category}</p> <strong>{weapon}</strong></li>
             )
         });
     };
@@ -115,6 +115,9 @@ class App extends Component {
                 <ul className="generated-list col">
                     {this.renderList()}
                 </ul>
+                <footer>
+                    Made by <a href="https://borsodidavid.com/" target='_blank'>Borsodi Dávid</a> © {new Date().getFullYear()}
+                </footer>
             </div>
         );
     }
